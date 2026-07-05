@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Grade Evaluator</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 id="title">Student Grade Evaluator</h1>
+
+<input type="text" id="studentName" placeholder="Student Name">
+<input type="number" id="studentAge" placeholder="Age">
+<input type="number" id="grade" placeholder="Final Grade">
+
+<h4>Course</h4>
+<select id="course">
+    <option>BSIT</option>
+    <option>BSCS</option>
+    <option>BSEMC</option>
+</select>
+
+<h4>Year Level</h4>
+<div class="radio-group">
+<label><input type="radio" name="year" value="1st Year">1st Year</label>
+<label><input type="radio" name="year" value="2nd Year">2nd Year</label>
+<label><input type="radio" name="year" value="3rd Year">3rd Year</label>
+<label><input type="radio" name="year" value="4th Year">4th Year</label>
+</div>
+
+<button onclick="evaluateStudent()">Evaluate</button>
+
+<div class="result">
+<h2>Student Summary</h2>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
